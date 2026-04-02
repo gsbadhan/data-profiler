@@ -3,6 +3,19 @@ from profiler.column_profiler import ColumnProfiler
 
 
 class TableProfiler:
+    """
+    Orchestrates profiling of database tables.
+
+    Responsibilities:
+    - Fetch table list from adapter
+    - Compute row counts
+    - Delegate column-level profiling
+    - Aggregate results into structured output
+
+    Supports:
+    - Parallel execution (via ThreadPoolExecutor)
+    - Configurable sampling and statistics depth
+    """
     
     def __init__(self, adapter, config):
         self.adapter = adapter

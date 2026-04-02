@@ -1,6 +1,10 @@
+"""
+Create sqlite database and sample data for manual testing.
+"""
+
 import sqlite3
 
-conn = sqlite3.connect("test.db")
+conn = sqlite3.connect("employee.db")
 cursor = conn.cursor()
 
 cursor.execute("""

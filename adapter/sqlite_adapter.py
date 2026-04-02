@@ -2,6 +2,14 @@ from adapter.base_adapter import DatabaseAdapter
 import sqlite3
 
 class SQLiteAdapter(DatabaseAdapter):
+    """
+    Adapter for interacting with SQLite databases.
+
+    This class implements database operations such as:
+    - Listing tables
+    - Fetching schema information
+    - Computing column statistics
+    """
         
     def __init__(self, db_path):
             self.conn = sqlite3.connect(db_path)

@@ -1,4 +1,15 @@
 class ColumnProfiler:
+    """
+    Profiles individual columns of a table.
+
+    Responsible for:
+    - Computing min/max values
+    - Estimating distinct counts
+    - Handling null statistics (optional)
+
+    Works with:
+    - Any DatabaseAdapter implementation
+    """
     
     def __init__(self, adapter, config):
         self.adapter = adapter
