@@ -5,7 +5,7 @@ source .venv/bin/activate
 uv sync
 
 ## Testing data setup
-python sqlite_db.py
+python script/sqlite_db.py
 
 
 ## Run application
