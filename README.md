@@ -1,16 +1,19 @@
 ## Project setup
-uv init data-profiler (optional)
-uv venv
-source .venv/bin/activate
-uv sync
+- uv init data-profiler (optional)
+- uv venv
+- source .venv/bin/activate
+- uv sync
 
 ## Testing data setup
-python script/sqlite_db.py
+- python script/sqlite_db.py
 
 
 ## Run application
-python main.py
+- python main.py
 
+## unit testing
+- pytest 
+- pytest --cov=.
 
 ## Output json format
 `{
@@ -25,7 +28,13 @@ python main.py
         "min": 18,
         "max": 80,
         "distinct_count": 45,
-        "null_count": 10
+        "null_count": 10,
+        "histogram": [
+            {
+              "value": 35,
+              "count": 1
+            }
+        ]
       }
     }
   ]
