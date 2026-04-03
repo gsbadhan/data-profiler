@@ -45,3 +45,7 @@
 
 ## Component design diagram
 ![Alt Text](data-profiler-design.png)
+
+
+## Functionality supported
+- SQLite database integrated
