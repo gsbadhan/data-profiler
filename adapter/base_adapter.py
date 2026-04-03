@@ -1,6 +1,14 @@
 from abc import ABC, abstractmethod
 
 class DatabaseAdapter(ABC):
+    """
+    Interface for concrete database adapter to interact with databases.
+
+    It has methods such as:
+    - Listing tables
+    - Fetching schema information
+    - Computing column statistics
+    """
 
     @abstractmethod
     def list_tables(self):
